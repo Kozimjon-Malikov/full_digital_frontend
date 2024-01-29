@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+header {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.22);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+  &.container {
+    margin-top: 15px;
+  }
+  border-radius: 5px;
+  overflow: hidden;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.logo a {
+  text-decoration: none;
+  color: crimson;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+}
+nav ul li {
+  list-style: none;
+  margin-right: 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  position: relative;
+}
+nav ul li a::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: crimson;
+    left: 0;
+    bottom: -3px;
+    border-radius: 0px;
+    margin: 0 auto;
+    transition: 0.2s all ease;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+/* section  */
+.content__block {
+  margin-top: clamp(20px, 3vw, 40px);
+  display: flex;
+  gap: 10px;
+}
+.content__block .content_video video {
+  height: fit-content;
+  border-radius: 10px;
+  box-shadow: 0px 3px 10px rgba(96, 234, 255, 0.33);
+}
+.content__music {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+.content__music .music_items .control_items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  position: relative;
+}
+.control_items button {
+  padding: 8px 15px;
+  border: none;
+  background-color: crimson;
+  color: #fff;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  transition: 0.2s all ease;
+  border: 1px solid crimson;
+
+}
+.control_items button:active {
+  background-color: #fff;
+  color: crimson;
+}
+.music_items {
+  position: relative;
+}
+.music_items audio::-webkit-media-controls-panel {
+  background-color: #f3f3f3;
+  width: 400px;
+  border: 1px solid red;
+}
+
+audio::-webkit-media-controls-play-button {
+  box-shadow: 0px 3px 6px rgba(96, 234, 255, 0.33);
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  color: rgba(96, 234, 255, 0.33);
+}
+audio::-webkit-media-controls-mute-button {
+  box-shadow: 0px 3px 6px rgba(255, 96, 194, 0.33);
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  color: rgba(96, 234, 255, 0.33);
+}
+/* events  */
+.events{
+    margin-top: 50px;
+}
+.content__blog{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+    justify-content: space-between;
+}
+.blog{
+    display: flex;
+    gap: 10px;
+    margin: 10px 0px;
+}
+.blog img{
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 10px;
+    vertical-align: middle;
+}
+.news__data{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 2rem;
+    color: rgb(13, 2, 84);
+    position: relative;
+}
+.news__data::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 70px;
+    margin: 0 auto;
+    bottom: 18px;
+    left: 37%;
+    background-color: crimson;
+}
+.news__data::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 70px;
+    margin: 0 auto;
+    bottom: 18px;
+    right: 37%;
+    background-color: crimson;
+}
+.details{
+    margin-top: 20px;
+    max-width: 300px;
+    text-align: justify;
+}
+.details h4{
+    font-size: 1.5rem;
+}
+.btn__link{
+    color: crimson;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+/* news page  */
+.content__blog_grid{
+    display: grid;
+    grid-template-areas: 
+    "event news news";
+    grid-template-columns: 35% 70%;
+    justify-content: center;
+    padding: 20px;
+}
+.events{
+    grid-area: event;
+    margin: 10px auto;
+}
+.news{
+    grid-area: news;
+}
+.news__items{
+    display: flex;
+    gap: 10px;
+    margin: 10px 0px;
+}
+.news__items img{
+    height: 150px;
+    width: 400px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.news__details span{
+    color: darkblue;
+    margin-top: 10px;
+    position: relative;
+    top: 5px;
+}
+.event__items{
+    max-width: 300px;
+    text-align: justify;
+}
+.event__items img{
+    height: 220px;
+    border-radius: 5px;
+}
+/* contact page  */
+form{
+    width: 100%;
+    margin: 50px auto;
+}
+.form__control{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0px auto;
+}
+.form__control label{
+    margin-top: 10px;
+}
+.form__control input{
+    padding: 8px 5px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #4444;
+}
+.form__control select,option{
+    padding: 10px 5px;
+}
+.form__control button{
+    max-width: 200px;
+    padding: 8px 0px;
+    margin-top: 10px;
+    background-color: crimson;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}

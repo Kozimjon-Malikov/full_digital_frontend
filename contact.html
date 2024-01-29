@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>News website</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+	<header class="container">
+		<div class="logo">
+			<a href="index.html">
+				<h2>Logo</h2>
+			</a>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="news.html">News</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+    <section class="forma container">
+        <form action="#" method="POST">
+            <div class="form__control">
+                <label for="Name">Name:</label>
+                <input type="text" name="name" id="Name">
+            </div>
+            <div class="form__control">
+                <label for="lastname">SecondName:</label>
+                <input type="text" name="lastname" id="lastname">
+            </div>
+            <div class="form__control">
+                <label for="age">Age:</label>
+                <input type="number" name="age" id="age">
+            </div>
+            <div class="form__control">
+                <label for="loc">Name:</label>
+                <select name="loc" id="loc">
+                    <option value="andijon">Andijon</option>
+                    <option value="fargona">Farg'ona</option>
+                    <option value="toshkend">Toshkend</option>
+                </select>
+            </div>
+
+            <div class="form__control">
+                <label for="comment">Comment:</label>
+                <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+            </div>
+            <div class="form__control">
+                <button type="submit" class="submit">Submit</button>
+            </div>
+        </form>
+    </section>
+	<script src="./app.js"></script>
+</body>
+
+</html>
