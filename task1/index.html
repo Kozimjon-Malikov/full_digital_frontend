@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-1</title>
+    <style>
+        .wrapper {
+            max-width: 1300px;
+            margin: 50px auto;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .box {
+            width: 200px;
+            height: 220px;
+            
+        }
+
+        .first .box:nth-child(1) {
+            box-shadow:0px 0px 12px rgba(2, 2, 2, 0.13);
+        }
+        .first .box:nth-child(2) {
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        }
+        .first .box:nth-child(3) {
+            box-shadow: 0px 14px 16px 5px rgba(0,0,0,0.1);
+        }
+        .first .box:nth-child(4) {
+            box-shadow: 0px 14px 16px 5px rgba(0,0,0,0.1);
+        }
+        .second .box:nth-child(1){
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        }
+        .second .box:nth-child(2){
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        }
+        .second .box:nth-child(3){
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+        }
+        .second .box:nth-child(4){
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        }
+        .second .box:nth-child(5){
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="row first">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <br><br>
+        <div class="row second">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </div>
+</body>
+
+</html>
